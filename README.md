@@ -3,6 +3,8 @@ Data and scripts used in Jing Lian Suah, Masliyana Husin, Peter Seah Keng Tok, B
 
 As at 2022-06-27, this repository contains only scripts and anonymised consolidated data for the severe outcomes (ICU admission and death) segment of the paper. Work is in progress to make available scripts and data for the infection segment.
 
+The full paper can be found [here](https://www.ijidonline.com/article/S1201-9712(22)00167-9/fulltext).
+
 # Replication notes
 Before running the scripts, please edit the lines containing file paths to reflect your local directories. In general *path_input* should contain the consolidated anonymised data set, and *path_wi* should be your intended output directory. All *telegram-send* blocks have been commented out; feel free to use your own telegram bot.
 
@@ -35,6 +37,6 @@ Before running the scripts, please edit the lines containing file paths to refle
 * ```vax_partial```: Dummy indicating if partially vaccinated (>= 1 day post-dose 1 but ) at the point of confirmation of SARS-CoV-2 infection (not used in analysis)
 * ```vax_full```: Dummy indicating if fully vaccinated (>= 14 days post-dose 2) at the point of confirmation of SARS-CoV-2 infection
 * ```test_count```: Number of supervised tests (RTK-Ag and RT-PCR) taken during the baseline period
-* ```trace_cound```: Number of times labelled as a 'casual contact' by Malaysia's check-in-based automated contact tracing system during the baseline period
+* ```trace_count```: Number of times labelled as a 'casual contact' by Malaysia's check-in-based automated contact tracing system during the baseline period
 * ```frontliner```: Factors indicating healthcare frontliner status (0 = general public, 1 = public healthcare worker, 2 = private healthcare worker)
 * ```reinf```: Dummy indicating SARS-CoV-2 reinfection (all rows with reinf = 1 are dropped in the analysis)
