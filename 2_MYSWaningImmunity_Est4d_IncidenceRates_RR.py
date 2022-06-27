@@ -17,10 +17,10 @@ time_start = time.time()
 
 ### 0 --- Preliminaries
 ## File paths
-path_input = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/2021-12-02_WaningVE_Freeze/2022-03-07_RR/'
-path_wi = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/MYSWaningImmunity/2022-03_RR/' # RR folder
+path_input = ''
+path_wi = '' # RR folder
 ## File name
-file_input = 'CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet'
+file_input = 'https://github.com/suahjl/WaningVE-COVID-MYS-2022/raw/main/Data/CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet'
 ## Data frames
 list_col_dates = ['date_lab', 'date_death',
                   'date1', 'date2'] # taken from CasesDeaths_Data

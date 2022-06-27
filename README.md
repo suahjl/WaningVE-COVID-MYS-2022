@@ -1,21 +1,25 @@
 # WaningVE-COVID-MYS-2022
 Data and scripts used in Jing Lian Suah, Masliyana Husin, Peter Seah Keng Tok, Boon Hwa Tng, Thevesh Thevananthan, Ee Vien Low, Maheshwara Rao Appannan, Faizah Muhamad Zin, Shahanizan Mohd Zin, Hazlina Yahaya, Kalaiarasu M. Peariasamy, Sheamini Sivasampu, Waning COVID-19 Vaccine Effectiveness for BNT162b2 and CoronaVac in Malaysia: An Observational Study, International Journal of Infectious Diseases, Volume 119, 2022, Pages 69-76, ISSN 1201-9712, https://doi.org/10.1016/j.ijid.2022.03.028.
 
-As at 2022-06-27, this repository contains only scripts and anonymised consolidated data for the severe outcomes (ICU admission and death) segment of the paper. Work is in progress to make available scripts and data for the infection segment.
+This repository contains only scripts and anonymised consolidated data for the severe outcomes (ICU admission and death) segment of the paper. Work is in progress to make available scripts and data for the infection segment.
 
 The full paper can be found [here](https://www.ijidonline.com/article/S1201-9712(22)00167-9/fulltext).
 
 # Replication notes
-Before running the scripts, please edit the lines containing file paths to reflect your local directories. In general *path_input* should contain the consolidated anonymised data set, and *path_wi* should be your intended output directory. All *telegram-send* blocks have been commented out; feel free to use your own telegram bot.
+## Steps
+1. Clone the repository. ```git clone https://github.com/suahjl/WaningVE-COVID-MYS-2022.git```
+2. Ensure that the the right vintages of dependencies are installed. ```pip install requirements.txt```
+3. Run the master module, which sequentially executes all python modules with prefix 2_. ```python MYSWaningImmunity_Est4d_ALL.py```
 
+## Specific scripts
 1. Step 0 (*0_MYSWaningImmunity_CasesDeaths_Data_RR.py*) consolidates the raw input data from various administrative data sets described in the paper. While these input data cannot be made public at this juncture, we have decided to release the associated script for transparency.
 2. Step 1 (*1_MYSWaningImmunity_CasesDeaths_Data_RR_ForRelease.py*) anonymises the consolidated data set, and runs checks that the data set is indeed anonymised.
-3. Step 2 scripts can be run in parallel, and reproduces the findings described in the paper.
-* 2_MYSWaningImmunity_Est4d_RR.py generates the overall VE estimates found in table 4.
-* 2_MYSWaningImmunity_Est4d_AgeStrat_RR.py generates the age-stratified VE estimates found in table 4.
-* 2_MYSWaningImmunity_Est4d_IncidenceRates_RR.py calculates the overall and age-stratified event rates (per 1000) found in table 4.
-* 2_MYSWaningImmunity_Est4d_SumStats_RR.py calculates the figures found in table 3.
-* 2_MYSWaningImmunity_Est4d_VaryX_RR.py generates the distribution of VE estimates found in figure S4 of the supplementary appendix.
+3. Step 2 scripts can be run in any parallel, and reproduces the findings described in the paper.
+	- 2_MYSWaningImmunity_Est4d_RR.py generates the overall VE estimates found in table 4.
+	- 2_MYSWaningImmunity_Est4d_AgeStrat_RR.py generates the age-stratified VE estimates found in table 4.
+	- 2_MYSWaningImmunity_Est4d_IncidenceRates_RR.py calculates the overall and age-stratified event rates (per 1000) found in table 4.
+	- 2_MYSWaningImmunity_Est4d_SumStats_RR.py calculates the figures found in table 3.
+	- 2_MYSWaningImmunity_Est4d_VaryX_RR.py generates the distribution of VE estimates found in figure S4 of the supplementary appendix.
 
 # Data notes
 1. [CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet](https://github.com/suahjl/WaningVE-COVID-MYS-2022/blob/main/Data/CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet) contains a data frame of 1869619 rows, each representing unique confirmed COVID-19 cases used in the paper. 
