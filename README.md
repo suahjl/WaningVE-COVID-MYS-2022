@@ -9,7 +9,7 @@ The full paper can be found [here](https://www.ijidonline.com/article/S1201-9712
 ## Steps
 1. Clone the repository. ```git clone https://github.com/suahjl/WaningVE-COVID-MYS-2022.git```
 2. Ensure that the the right vintages of dependencies are installed. ```pip install requirements.txt```
-3. Run the master module, which sequentially executes all python modules with prefix 2_. ```python MYSWaningImmunity_Est4d_ALL.py```
+3. Run the master module, which sequentially executes all python modules with prefix 2_. ```python MYSWaningImmunity_Est4d_ALL```
 
 ## Specific scripts
 1. Step 0 (*0_MYSWaningImmunity_CasesDeaths_Data_RR.py*) consolidates the raw input data from various administrative data sets described in the paper. While these input data cannot be made public at this juncture, we have decided to release the associated script for transparency.
