@@ -16,7 +16,7 @@ Before running the scripts, please edit the lines containing file paths to refle
 * 2_MYSWaningImmunity_Est4d_VaryX_RR.py generates the distribution of VE estimates found in figure S4 of the supplementary appendix.
 
 # Data notes
-1. ```[CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet](https://github.com/suahjl/WaningVE-COVID-MYS-2022/blob/main/Data/CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet)``` contains a data frame of 1869619 rows, each representing unique confirmed COVID-19 cases used in the paper. 
+1. [CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet](https://github.com/suahjl/WaningVE-COVID-MYS-2022/blob/main/Data/CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet) contains a data frame of 1869619 rows, each representing unique confirmed COVID-19 cases used in the paper. 
 * ```date1```: Date of receipt of first dose
 * ```date2```: Date of receipt of second dose (the paper defines fully vaccinated as 14 days after this date)
 * ```date_lab```: Date of SARS-CoV-2 infection confirmation test
