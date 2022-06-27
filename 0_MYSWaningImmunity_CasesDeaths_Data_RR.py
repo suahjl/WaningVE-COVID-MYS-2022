@@ -20,11 +20,11 @@ time_start = time.time()
 
 ### 0 --- Preliminaries
 ## File paths
-path_input = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/2021-12-02_WaningVE_Freeze/2021-12-02/' # frozen path
-path_output = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/2021-12-02_WaningVE_Freeze/2022-03-07_RR/' # frozen path
-path_trace = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/Trace/'
-path_simka = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/SIMKA/'
-path_fl = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/HighRisk/'
+path_input = '' # frozen path
+path_output = '' # frozen path
+path_trace = ''
+path_simka = ''
+path_fl = ''
 
 ## File names
 file_cd = 'CasesDeaths_Data.csv' # Fully cleaned cases + deaths + icu (status only)

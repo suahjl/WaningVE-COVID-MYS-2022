@@ -20,8 +20,8 @@ time_start = time.time()
 
 ### 0 --- Preliminaries
 ## File paths
-path_input = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/0_Data/2021-12-02_WaningVE_Freeze/2022-03-07_RR/'
-path_wi = 'D:/Users/ECSUAH/Desktop/Quant/HealthEconomy/VaccinesAssessment/MYSWaningImmunity/2022-03_RR/' # RR folder
+path_input = ''
+path_wi = '' # RR folder
 ## File name
 file_input = 'CasesDeaths_WaningImmunity_Data_RR.csv'
 ## Data frames
