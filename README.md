@@ -5,7 +5,7 @@ This repository contains only scripts and anonymised consolidated data for the s
 
 The full paper can be found [here](https://www.ijidonline.com/article/S1201-9712(22)00167-9/fulltext).
 
-# Replication notes
+# Analysis
 ## Steps
 1. Clone the repository. ```git clone https://github.com/suahjl/WaningVE-COVID-MYS-2022.git```
 2. Ensure that the the right vintages of dependencies are installed. ```pip install requirements.txt```
@@ -21,7 +21,7 @@ The full paper can be found [here](https://www.ijidonline.com/article/S1201-9712
 	- 2_MYSWaningImmunity_Est4d_SumStats_RR.py calculates the figures found in table 3.
 	- 2_MYSWaningImmunity_Est4d_VaryX_RR.py generates the distribution of VE estimates found in figure S4 of the supplementary appendix.
 
-# Data notes
+# Data
 1. [CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet](https://github.com/suahjl/WaningVE-COVID-MYS-2022/blob/main/Data/CasesDeaths_WaningImmunity_Data_RR_ForRelease.parquet) contains a data frame of 1869619 rows, each representing unique confirmed COVID-19 cases used in the paper. 
 * ```date1```: Date of receipt of first dose
 * ```date2```: Date of receipt of second dose (the paper defines fully vaccinated as 14 days after this date)
